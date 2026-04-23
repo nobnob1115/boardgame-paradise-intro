@@ -683,11 +683,13 @@ function MSlide9({ active }) {
         <div className="m-fontscale-body" style={{ fontSize: 16, opacity: active ? 0.92 : 0, lineHeight: 1.7, marginBottom: 36, fontWeight: 600, transform: active ? 'translateY(0)' : 'translateY(20px)', transition: 'all 0.7s ease 0.7s' }}>
           2026年12月オープン。<br/>先行予約受付中です。
         </div>
-        <button
+        <a
           className="m-cta-btn"
-          onClick={() => alert('登録ページへ（デモ）')}
+          href="https://www.boardgame-paradice.com/"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            border: 'none', cursor: 'pointer',
+            cursor: 'pointer', textDecoration: 'none',
             display: 'inline-flex', alignItems: 'center', gap: 12,
             background: '#fff', color: M_COLORS.red,
             padding: '20px 32px', borderRadius: 999,
@@ -697,7 +699,7 @@ function MSlide9({ active }) {
             transition: 'all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.9s',
           }}>
           🎲 会員登録する
-        </button>
+        </a>
         <div style={{ fontSize: 12, opacity: active ? 0.8 : 0, marginTop: 20, fontWeight: 600, transition: 'all 0.6s ease 1.1s' }}>
           boardgame-paradice.com
         </div>

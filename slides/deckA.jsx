@@ -581,9 +581,9 @@ function ASlide7() {
           2026年12月オープン。<br/>
           先行予約受付中です。まずは会員登録から。
         </div>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 14, background: '#fff', color: A_COLORS.red, padding: '22px 42px', borderRadius: 999, fontSize: 24, fontWeight: 900, boxShadow: `6px 6px 0 ${A_COLORS.ink}` }}>
+        <a href="https://www.boardgame-paradice.com/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 14, background: '#fff', color: A_COLORS.red, padding: '22px 42px', borderRadius: 999, fontSize: 24, fontWeight: 900, boxShadow: `6px 6px 0 ${A_COLORS.ink}`, textDecoration: 'none' }}>
           🎲 boardgame-paradice.com で登録
-        </div>
+        </a>
       </div>
     </AFrame>
   );
