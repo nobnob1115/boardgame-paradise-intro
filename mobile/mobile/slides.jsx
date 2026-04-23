@@ -615,7 +615,14 @@ function MSlide8({ active }) {
   ];
   return (
     <MFrame>
-      <MTag>05 / 料金プラン</MTag>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', alignSelf: 'flex-start' }}>
+        <MTag>05 / 料金プラン</MTag>
+        <span style={{
+          display: 'inline-block', background: M_COLORS.yellow, color: M_COLORS.ink,
+          padding: '5px 12px', borderRadius: 999, fontSize: 12, fontWeight: 900,
+          letterSpacing: '0.06em', border: `2px solid ${M_COLORS.ink}`,
+        }}>⚠️ 検討中</span>
+      </div>
       <div className="m-fontscale-heading" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.15, marginTop: 16, marginBottom: 8, opacity: active ? 1 : 0, transform: active ? 'translateY(0)' : 'translateY(16px)', transition: 'all 0.7s ease 0.15s' }}>
         サークルで<br/>割ればおトク。
       </div>
@@ -653,6 +660,9 @@ function MSlide8({ active }) {
             <div style={{ fontSize: 12, opacity: 0.85, lineHeight: 1.5 }}>{p.note}</div>
           </div>
         ))}
+      </div>
+      <div style={{ fontSize: 11, color: M_COLORS.ink, opacity: active ? 0.6 : 0, marginTop: 14, lineHeight: 1.55, transition: 'all 0.6s ease 0.8s' }}>
+        ※ 料金プランは現在検討中のため、金額・内容は変更となる可能性があります。
       </div>
     </MFrame>
   );

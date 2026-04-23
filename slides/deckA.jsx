@@ -518,7 +518,14 @@ function ASlide6() {
   ];
   return (
     <AFrame>
-      <ATag>05 / 料金プラン</ATag>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+        <ATag>05 / 料金プラン</ATag>
+        <span style={{
+          display: 'inline-block', background: A_COLORS.yellow, color: A_COLORS.ink,
+          padding: '6px 14px', borderRadius: 999, fontSize: 13, fontWeight: 800,
+          letterSpacing: '0.04em', border: `2px solid ${A_COLORS.ink}`,
+        }}>⚠️ 検討中</span>
+      </div>
       <div style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 10 }}>
         サークルで割ればおトク。
       </div>
@@ -555,6 +562,7 @@ function ASlide6() {
         ))}
       </div>
       <div style={{ fontSize: 13, color: A_COLORS.ink, opacity: 0.55, marginTop: 20 }}>
+        ※ 料金プランは現在検討中のため、金額・内容は変更となる可能性があります。<br/>
         ※ 1サークル複数人で負担可能。予約枠超過分は従量課金オプションあり。
       </div>
     </AFrame>
